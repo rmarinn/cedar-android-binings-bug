@@ -9,7 +9,7 @@ crate-type = ["cdylib"]
 
 [dependencies]
 uniffi = "0.28.3"
-coreapp = { workspace = true }
+corelib = { workspace = true }
 
 [build-dependencies]
 uniffi = { version = "0.28.3", features = ["build"] }

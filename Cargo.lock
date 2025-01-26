@@ -21,7 +21,7 @@ checksum = "e999941b234f3131b00bc13c22d06e8c5ff726d1b6318ac7eb276997bbb4fef0"
 name = "android_bindings"
 version = "0.1.0"
 dependencies = [
- "coreapp",
+ "corelib",
  "uniffi",
 ]
 
@@ -440,7 +440,7 @@ source = "registry+https://github.com/rust-lang/crates.io-index"
 checksum = "773648b94d0e5d620f64f280777445740e61fe701025087ec8b57f45c791888b"
 
 [[package]]
-name = "coreapp"
+name = "corelib"
 version = "0.1.0"
 dependencies = [
  "cedar-policy",

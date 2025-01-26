@@ -1,6 +1,6 @@
 [workspace]
 resolver = "2"
-members = ["core", "bindings/*", "uniffi-bindgen"]
+members = ["corelib", "bindings/*", "uniffi-bindgen"]
 
 [workspace.dependencies]
-coreapp = { path = "core" }
+corelib = { path = "corelib" }

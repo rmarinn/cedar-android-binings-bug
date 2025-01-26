@@ -1,0 +1,8 @@
+[package]
+name = "corelib"
+version = "0.1.0"
+edition = "2021"
+
+[dependencies]
+cedar-policy = "4.3.1"
+stacker = "0.1.17"
