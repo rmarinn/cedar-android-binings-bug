@@ -23,7 +23,7 @@ pub fn authorize(principal: &str, action: &str, resource: &str) -> String {
         Request::new(principal, action, file, Context::empty(), None).expect("validate request");
 
     let test_entity = "Test::\"abc\"".parse().expect("parse resource uid");
-    let test_entity_atts = HashMap::from([
+    let test_entity_attrs = HashMap::from([
         (
             "item1".to_string(),
             RestrictedExpression::new_string("abc".to_string()),
@@ -33,7 +33,7 @@ pub fn authorize(principal: &str, action: &str, resource: &str) -> String {
 
     // This call to Entity::new is what fails in the android binding
     let test_entity =
-        Entity::new(test_entity, test_entity_atts, HashSet::new()).expect("build entity");
+        Entity::new(test_entity, test_entity_attrs, HashSet::new()).expect("build entity");
 
     let entities = Entities::from_entities([test_entity], None).expect("collect entities");
     let authorizer = Authorizer::new();
