@@ -1,0 +1,15 @@
+[package]
+name = "android_bindings"
+version = "0.1.0"
+edition = "2021"
+
+[lib]
+name = "android_bindings"
+crate-type = ["cdylib"]
+
+[dependencies]
+uniffi = "0.28.3"
+coreapp = { workspace = true }
+
+[build-dependencies]
+uniffi = { version = "0.28.3", features = ["build"] }
